@@ -9,6 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Scanner s= new Scanner(System.in);
 
         /*  Islem<Integer> islem1= new Islem<>();
         islem1.toplama(8,4);
@@ -18,9 +19,35 @@ public class Main {
 
         Islem<Byte> b=new Islem<>();*/
 
-        Test test= new Test();
+//        Test test= new Test();
+//
+//        test.setler();
+//
+        int a=33;
+        int b=0;
+        Integer c= null;
 
-        test.setler();
+
+        System.err.println("merhabalar java dersi ...");
+
+
+        try {
+            int d= s.nextInt();
+            int sonuc = c/b;
+            System.out.println(sonuc);
+        }catch (NullPointerException xa){
+            System.out.println("NULL POINTER HATASI");
+        }catch (ArithmeticException e){
+            System.out.println("Matematiksel bir hata");
+        }catch (Exception e){
+            System.out.println(e);
+            System.out.println("bilinmeyen hata");
+        }
+
+
+
+
+
 
     }
 
